@@ -1,0 +1,11 @@
+// import TO from '../components/testTwoModule/TO'
+// import TW from '../components/testTwoModule/TW'
+export default [
+    {
+        path: '/testTwoModule/TO',
+        component: () => import(/* webpackChunkName: "TestOne" */ '../components/testTwoModule/TO')
+    }, {
+        path: '/testTwoModule/TW',
+        component: () => import(/* webpackChunkName: "TestOne" */ '../components/testTwoModule/TW')
+    }
+]
